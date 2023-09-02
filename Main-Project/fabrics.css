@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 345px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 16px
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Libre+Bodoni:wght@500&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Epilogue:wght@500;700&family=Libre+Bodoni:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Epilogue:wght@500;700&family=Libre+Bodoni:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.navigation{
+    height: 27vh;
+    background-color: rgb(255, 221, 153);
+}
+.navigation .top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
+}
+.navigation .mid-nav {
+    width: 60%;
+    /* background-color: aquamarine; */
+    margin: 1.5rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}
+.navigation .mid-nav p{
+    text-transform: capitalize;
+}
+.navigation .top-nav .hamburger .bar {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: hsl(0, 0%, 8%);
+    margin: 4px auto;
+}
+
+/***************MOBILE MENU COLLAPSED**************/
+/***************MOBILE MENU COLLAPSED**************/
+
+.top-nav .clickables {
+    /* background-color:hsl(51, 83%, 49%); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: calc(100%/1.5);
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity:0;
+    top: 0;
+    right: -80%; 
+}
+.top-nav .clickables a{
+    
+}
+.top-nav .clickables .close-btn{
+    /* background-color: aqua; */
+    width: 28px;
+    margin: 15px 0 0 calc((375px/1.5) - 60px);
+    padding: 2px;
+    margin-right: 2px;
+}
+
+.top-nav .clickables .link-buttons{
+    margin: 5rem 0 0 2rem;
+}
+
+.top-nav .clickables .link-buttons a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.top-nav .clickables .link-buttons .register{
+    width: 80%;
+    padding: .5rem 0;
+    border: 2px solid hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* ****************ACTIVE CLASSES**************** */
+.top-nav .clickables.active{
+    right: 0;
+     opacity: 1;
+ }
+
+
+ /***********************SECTIONS SECTIONS SECTIONS*******************/
+ /***********************SECTIONS SECTIONS SECTIONS*******************/
+
+
+
+ /***********************WELCOME SECTIONS *******************/
+ .welcome-section{
+    /* height: 100vh; */
+    background-color: rgb(153, 90, 12);
+ }
+  .welcome-section .bg-image-wedding-flowr{
+    background-color: rgb(161, 204, 190);
+    padding: 2rem;
+  }
+  .welcome-section .welcome{
+    width: 95%;
+    background-color: white;
+    margin: 0px auto;
+    padding: 1rem;
+  }
+ .welcome-section .welcome h2{
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding-top: 2rem;
+    text-transform: capitalize;
+    font-family: 'Philosopher', cursive;
+ }
+.welcome-section .welcome p{
+    text-align: center; 
+    padding-top: 1.5rem;
+}
+.welcome-section .welcome-image img{
+    width: 100%;
+    
+} 
+ /***********************UNRIVALLED SECTIONS *******************/
+ .unrivalled-section h1{
+    padding-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+ }
+ .unrivalled-section .center{
+    text-align: center; 
+ }
+ .unrivalled-section .one{
+    padding-top: 2rem;
+ }
+/*  /***********************PACKAGE SECTIONS *******************/ 
+ .package{
+    display: block;
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    background-color: purple;
+    border: none;
+    font-size: x-large;
+    color: white;
+    text-transform: capitalize;
+ }
+/***********************LOVE SECTION *******************/
+.love-section .love-image img{
+    width: 100%;
+}
+ .love-section .labour-text .labor{
+    text-align: center;
+    padding: 2rem 0 10px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+ }
+ .love-section .labour-text .love-text{
+    text-align: center;
+ }
+
+ /***********************BOOK A CALL SECTION *******************/
+
+ .book-call{
+    display: block;
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    background-color: purple;
+    border: none;
+    font-size: x-large;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+ }
+
+  /***********************FIND US SECTION *******************/
+  .find-us{
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .find-us .find{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+  .find-us hr{
+    width: 25%;
+    margin: auto;
+    
+  }
+
+   /***********************FOOTER*******************/
+   .footer{
+    background-color: rgb(9, 1, 17);
+   }
+   .footer .footer-ul {
+    padding-top:3rem ;
+   }
+   .footer .footer-ul li{
+    list-style: none;
+    padding-top: 15px;
+   }
+   .footer .footer-ul li a{
+    text-decoration: none;
+    color: goldenrod;
+   }
+    .footer p{
+        color: white;
+        padding-top: 5rem;
+        font-size: smaller;
+        font-family: 'Dancing Script', cursive;
+    }
